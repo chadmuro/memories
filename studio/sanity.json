@@ -1,7 +1,7 @@
 {
   "root": true,
   "project": {
-    "name": "memories-backend"
+    "name": "memories"
   },
   "api": {
     "projectId": "vjummub5",
