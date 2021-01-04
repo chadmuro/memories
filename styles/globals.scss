@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Redressed&display=swap');
+@import './variables.scss';
+
+html,
+body {
+	padding: 0;
+	margin: 0;
+    font-family: 'Dancing Script', sans-serif;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+
+    h1 {
+        font-size: 4rem;
+    }
+}
+
+footer {
+    height: 60px;
+    background: $color-two;
+}
