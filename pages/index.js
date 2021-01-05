@@ -5,18 +5,19 @@ import sanityClient from '../client';
 import Layout from '../components/Layout';
 
 export default function Home({ allPosts }) {
-	console.log(allPosts);
 
 	return (
 		<Layout>
-			{allPosts.map(post => (
-				<div key={post.title}>
-                    <img src={post.mainImage.asset.url} alt={post.mainImage.title} />
-                    <h1>{post.title}</h1>
-                    <h3>{post.date}</h3>
-                    <p>{post.body[0].children[0].text}</p>
-                </div>
-			))}
+			<div className={styles.home}>
+				{allPosts.map(post => (
+					<div key={post.title}>
+						<img src={post.mainImage.asset.url} alt={post.mainImage.title} />
+						<h1>{post.title}</h1>
+						<h3>{post.date}</h3>
+						<p>{post.body[0].children[0].text}</p>
+					</div>
+				))}
+			</div>
 		</Layout>
 	);
 }
